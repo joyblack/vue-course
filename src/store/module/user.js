@@ -1,5 +1,5 @@
 const state = {
-
+  username: 'zhaoyi'
 }
 
 const mutations = {

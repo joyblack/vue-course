@@ -53,6 +53,16 @@ const routes = [
     component: () => import('@/views/confirm.vue')
   },
   {
+    path: '/vuex1',
+    name: 'vuex1',
+    component: () => import('@/views/vuex1.vue')
+  },
+  {
+    path: '/ajax',
+    name: 'ajax',
+    component: () => import('@/views/ajax')
+  },
+  {
     path: '*',
     name: 'all',
     component: () => import('@/views/error_404.vue')

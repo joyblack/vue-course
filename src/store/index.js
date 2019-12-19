@@ -1,19 +1,24 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import User from './module/user'
+import user from './module/user'
+import state from './state'
+import getters from './getters'
+import mutations from './mutations'
+import actions from './actions'
+import storeInLocal from './plugin/storeInLocal'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+  strict: true,
+  state,
+  getters,
+  mutations,
+  actions,
   modules: {
-    User
-  }
+    user
+  },
+  plugins: [ storeInLocal ]
 })
 
 /* Vuex相关配置 */
